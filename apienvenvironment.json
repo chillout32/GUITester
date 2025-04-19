@@ -1,0 +1,27 @@
+{
+	"id": "910948ba-7fe4-46ff-8723-87567373bd26",
+	"name": "apienv",
+	"values": [
+		{
+			"key": "baseurl",
+			"value": "http://localhost:5173",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "user_id",
+			"value": "19",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "company_id",
+			"value": "30",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-04-19T18:54:57.550Z",
+	"_postman_exported_using": "Postman/11.40.4"
+}

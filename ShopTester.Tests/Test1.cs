@@ -128,4 +128,16 @@ public class DemoTest : PageTest
         await _page.ClickAsync("button.stateUpdateButton");
 
     }
+
+    [TestMethod]
+    public async Task GoToEmployeesRoute()
+    {
+        LoginAsAdmin();
+
+        await _page.GetByRole(AriaRole.Link, new() { Name = "Employees" }).ClickAsync();
+
+        await Expect(_page).ToHaveURLAsync("http://localhost:5173/admin/employees");
+
+        await Expect(_page.Locator("div.employeeView")).ToBeVisibleAsync();
+    }
 }
